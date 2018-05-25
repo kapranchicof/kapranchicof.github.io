@@ -1,0 +1,86 @@
+body{
+//background-image: url(portfolio/menu.jpg);
+margin: 0;
+font-family: Segoe UI, Ebrima,  Helvetica, "Sans-serif";
+font-weight: 600;
+}
+div{
+//border: 1px solid black;
+}
+a {
+text-decoration: none;
+}
+a:link, :visited,:hover {
+color: black ; 
+}
+a:active {
+color: gray; 
+}
+
+.top_div{
+//position: absolute;
+position: fixed;
+top: 0px;
+width:80%;
+height: 120px;
+background: white;
+padding: 0% 10% 0% 10%;
+background-image: url(portfolio/menu.jpg);
+z-index:11;
+}
+
+.leftstr{
+width: 50%;
+float: left; 
+}
+.rightstr {
+float:right;
+width: 50%;
+text-align: right;
+}
+
+.flex_container {
+background-image: url(portfolio/menu.jpg);
+position: absolute;
+top: 120px;
+width:100%;
+display: -webkit-flex; 
+display: flex; /*отображает контейнер как блочный элемент*/
+justify-content: center;
+overflow: hidden;
+}
+
+.column{
+width:34%;
+position: relative;
+float: left;
+min-width:200px;
+max-width:530px;
+background-image: url(portfolio/menu.jpg);
+}
+.img_hor{
+float: left;
+position: relative;
+width:100%;
+}
+.img_vert{
+float: left;
+position: relative;
+width:50%;
+}
+
+.img_vert:hover {
+//-webkit-filter: grayscale(0%) opacity(100%) brightness(100%);
+//filter: grayscale(0%) opacity(100%) brightness(100%);
+transition: 0.5s;
+box-shadow: 0 0 10px rgba(0,0,0,1.5);
+z-index: 10;
+}
+.img_hor:hover {
+//-webkit-filter: grayscale(0%) opacity(100%) brightness(100%);
+//filter: grayscale(0%) opacity(100%) brightness(100%);
+transition: 0.5s;
+box-shadow: 0 0 10px rgba(0,0,0,1.5);
+z-index: 10;
+}
+
