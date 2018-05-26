@@ -1,0 +1,116 @@
+body{
+font-family: Segoe UI, Ebrima,  Helvetica, "Sans-serif";
+//font-family: Segoe UI;
+font-weight: 650;
+//background-image: url(images/menu.jpg);
+margin: 0;
+}
+a {
+text-decoration: none;
+}
+a:link, :visited,:hover {
+color: black ; 
+}
+a:active {
+color: gray; 
+}
+.underline {
+  border-bottom: 4px solid rgb(200, 200, 200);
+  display: inline-block;
+  line-height: 0.85;
+}
+
+.top_div{
+position: fixed;
+top: 0px;
+width:80%;
+height: 120px;
+background: white;
+padding: 0% 10% 0% 10%;
+background-image: url(images/menu.jpg);
+z-index:11;
+
+}
+.leftstr{
+width: 50%;
+float: left; 
+}
+.rightstr {
+float:right;
+width: 50%;
+text-align: right;
+}
+
+.flex_container {
+position: absolute;
+top: 120px;
+display: -webkit-flex; 
+display: flex; /*отображает контейнер как блочный элемент*/
+justify-content: center;
+background: gray;
+}
+
+.column{
+width:34%;
+position: relative;
+float: left;
+min-width:160px;
+//max-width:350px;
+background-image: url(images/menu.jpg);
+}
+
+.center_div{
+position: fixed;
+top: 25%;
+left: 35%;
+width:33%;
+min-width:250px;
+max-width: 350px;
+max-height: 500px;
+z-index: 1;
+background: white;
+}
+
+.menu{
+top: 2%;
+left: 5%;
+width:80%;
+height: 90%;
+position: absolute;
+min-width:120px;
+border: 3px solid black;
+z-index: 10;
+padding: 5% 3% 2% 5%;
+}
+
+.img_center{
+float: left;
+position: relative;
+width:100%;
+}
+.img_hor{
+float: left;
+position: relative;
+width:100%;
+-webkit-filter: grayscale(100%) opacity(50%) brightness(20%);
+filter: grayscale(100%) opacity(50%) brightness(20%);
+}
+.img_vert{
+float: left;
+position: relative;
+width:50%;
+-webkit-filter: grayscale(100%) opacity(50%) brightness(30%);
+filter: grayscale(100%) opacity(50%) brightness(30%);
+}
+
+.img_vert:hover {
+-webkit-filter: grayscale(0%) opacity(100%) brightness(100%);
+filter: grayscale(0%) opacity(100%) brightness(100%);
+transition: 0.5s;
+}
+.img_hor:hover {
+-webkit-filter: grayscale(0%) opacity(100%) brightness(100%);
+filter: grayscale(0%) opacity(100%) brightness(100%);
+transition: 0.5s;
+}
+
